@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitrali Music | Wasim SaGar Official</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+
+    <header>
+        <nav>
+            <div class="logo">CHITRALI <span>MUSIC</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">WASIM <span>SAGAR</span></h1>
+            <p class="hero-tagline">The Sound of Chitral - Exclusive Music Collection</p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <div id="video-display-area" style="display:none; text-align: center; margin-bottom: 50px;">
+            <div class="section-heading">
+                <h2 id="now-playing-title" style="color:var(--aqua);">Playing Now</h2>
+                <div class="underline"></div>
+            </div>
+            <video id="main-video-player" controls style="width:100%; max-width:850px; border: 2px solid var(--aqua); border-radius:15px; box-shadow: 0 0 25px var(--aqua-glow);">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+<div id="videoModal" class="video-modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closePlayer()">&times;</span>
+        <iframe id="youtubeFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="section-heading">
+    <h2>Trending Tracks</h2>
+    <div class="underline"></div>
+</div>
+
+<div class="music-grid">
+    <div class="song-card" onclick="playVideo('9oEcu3DQs3A')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/9oEcu3DQs3A/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 01</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('wR_sOfWfd1c')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/wR_sOfWfd1c/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 02</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('HyNSJ1t1tnQ')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/HyNSJ1t1tnQ/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 03</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('5UhW0e-kiy4')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/5UhW0e-kiy4/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 04</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('wXnaJv3kIuQ')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/wXnaJv3kIuQ/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 05</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('qvfmcJjtbj4')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/qvfmcJjtbj4/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 06</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('b63JxP5zeIQ')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/b63JxP5zeIQ/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 07</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('b63JxP5zeIQ')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/b63JxP5zeIQ/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 08</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('aq5RFHruG64')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/aq5RFHruG64/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 09</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('oazmP8pYXPU')">
+        <div class="card-media">
+            <img src="https://img.youtube.com/vi/oazmP8pYXPU/maxresdefault.jpg" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 10</h3></div>
+    </div>
+
+    <div class="song-card" onclick="playVideo('oazmP8pYXPU')">
+        <div class="card-media">
+            <img src="https://youtu.be/EzgwwI3UCVA?si=oWe2g8B-uv1Ir9Ny" alt="Song">
+            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="card-info"><h3>Khowar Track 11</h3></div>
+    </div>
+</div>
+
+
+        <section id="about" style="margin-top: 80px;">
+            <div class="section-heading"><h2>About Me</h2><div class="underline"></div></div>
+            <p style="color:#bbb; font-size:18px;">The Official Gallery of Wasim SaGar. A journey of translating the soul of Chitral into the vibrant colors of music. This is more than just a gallery; it is a sanctuary for the ancient melodies and traditions that define our identity. Through the artistry of Wasim SaGar, we strive with sincerity to preserve the musical heritage of Chitral for generations to come.</p>
+        </section>
+
+        <section id="contact" style="margin-top: 80px;">
+            <div class="section-heading"><h2>Contact</h2><div class="underline"></div></div>
+            <div class="contact-box">
+                <form action="https://formspree.io/f/sagarwasim996@gmail.com" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer style="text-align:center; padding: 40px; border-top: 1px solid #222; color:var(--aqua);">
+        <p>© 2026 Wasim SaGar Official</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
